@@ -1,0 +1,47 @@
+<!-- 모든 <table> 태그에 테두리를 1px 실선(solid)으로 설정하고, 셀 간격(cellspacing)을 0으로 설정하세요.
+<th> 태그의 배경색을 회색으로 설정하고, 글꼴 색상을 흰색으로 설정하세요.
+<td> 태그에 패딩을 10px 추가하고, 테두리를 1px 실선으로 설정하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>task04</title>
+        <style>
+            table {
+                outline: 1px solid;
+                border-spacing: 0px;
+            }
+
+            th {
+                background-color: gray;
+                color: white;
+            }
+
+            td {
+                padding: 10px;
+                outline: 1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>나이</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>홍길동</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>김철수</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

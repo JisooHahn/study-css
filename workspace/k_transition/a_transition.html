@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>transition</title>
+        <style>
+            div:nth-child(1) {
+                width: 50px;
+                height: 50px;
+                background-color: brown;
+                transition: background-color 1s;
+            }
+
+            div:nth-child(1):hover {
+                background-color: red;
+                /* 투명도: 100%가 원본 */
+                opacity: 50%;
+            }
+
+            div:nth-child(2) {
+                width: 100px;
+                height: 100px;
+                background-color: rgb(174, 163, 163);
+                /* transition: [대상] [걸리는 시간] [딜레이] */
+                /* transition: all 3s 1s; */
+                transition-property: width, height, transform;
+                transition-duration: 3s, 5s, 2s;
+                transition-delay: 1s, 0s, 0s;
+            }
+
+            div:nth-child(2):hover {
+                width: 300px;
+                height: 200px;
+                transform: translateX(200px);
+            }
+
+            div:nth-child(3) {
+                width: 90px;
+                height: 130px;
+                background-image: url("https://gangnam.koreaisacademy.com/2023/img/tch/teacher007.png");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                transform: rotate(90deg);
+                cursor: pointer;
+                transition: transform 2s;
+            }
+
+            div:nth-child(3):hover {
+                transform: rotate(0);
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div></div>
+        <div></div>
+    </body>
+</html>

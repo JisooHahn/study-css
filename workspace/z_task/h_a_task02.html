@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>task02</title>
+        <style>
+            html {
+                font-size: 18px; /* 기본 글꼴 크기 변경 */
+            }
+
+            .parent-em {
+                font-size: 20px;
+            }
+
+            .child-em {
+                font-size: 2rem;
+            }
+
+            .nested-em {
+                font-size: 1.5em;
+            }
+
+            .nested-em p {
+                font-size: 0.5em;
+            }
+
+            .percent-parent {
+                font-size: 14px; /* 부모 글꼴 크기 변경 */
+            }
+
+            .percent-child {
+                font-size: 200%;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>혼자 해보는 연습</h2>
+        <div class="parent-em">
+            <p class="child-em">이것은 em용입니다.</p>
+            <div class="nested-em">
+                재밌다
+                <p>근데 어렵다</p>
+            </div>
+        </div>
+        <div class="percent-parent">
+            2프로 부족할 때
+            <p class="percent-child">난 게토레이가 좋음</p>
+        </div>
+    </body>
+</html>

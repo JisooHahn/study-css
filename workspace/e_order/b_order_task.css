@@ -1,0 +1,44 @@
+/* align-items-수평, justify-content-수직 */
+
+#a {
+    border: 5px solid violet;
+    width: 800px;
+    height: 750px;
+}
+
+#b, #g {
+    border: 5px solid red;
+    width: 300px;
+    height: 300px;
+}
+
+#b {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+}
+
+#c, #e {
+    /* margin: 0 auto; */
+    border: 5px solid green;
+    width: 100px;
+    height: 120px;
+}
+
+#e {
+    padding: 20px 0;
+}
+
+#f {
+    line-height: 120px;
+}
+
+#g {
+    text-align: right;
+}
+
+#h {
+    line-height: 577px;
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Margin Practice</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 20px;
+            }
+
+            h1 {
+                margin-bottom: 30px;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                color: white;
+                display: inline-block;
+                text-align: center;
+                line-height: 100px;
+                font-size: 20px;
+                font-weight: bold;
+                border: 1px solid #333;
+            }
+            .red {
+                background-color: red;
+            }
+            .blue {
+                background-color: blue;
+            }
+            .green {
+                background-color: green;
+            }
+
+            .box {
+                margin: 20px;
+            }
+
+            .red {
+                margin-top: 40px;
+                margin-right: 10px;
+                margin-bottom: 20px;
+                margin-left: 5px;
+            }
+            .blue {
+                margin: 50px 0; /* 상하 여백 50px, 좌우 0px */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Margin Practice</h1>
+        <div class="box red">1</div>
+        <div class="box blue">2</div>
+        <p class="box green">3</p>
+    </body>
+    <!-- box-red처럼 class명을 붙여쓰면 class가 1개지만 box red 일케 띄어쓰면 box랑 red 
+     두개의 class가 생기는거다...띄어쓰기 함부로 하면 안 되는 이유 -->
+</html>

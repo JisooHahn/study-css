@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>float</title>
+        <style>
+            body {
+                font-size: 35px;
+            }
+
+            .div {
+                width: 200px;
+                height: 100px;
+                border: 3px solid black;
+                text-align: center;
+                line-height: 100px;
+                float: left;
+            }
+            #next-element {
+                width: 250px;
+                height: 250px;
+                border: 3px dotted gold;
+                /* clear: both; */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div-wrap">
+            <div class="div">1</div>
+            <div class="div">2</div>
+            <div class="div">3</div>
+        </div>
+        <div id="next-element">DIV</div>
+    </body>
+</html>

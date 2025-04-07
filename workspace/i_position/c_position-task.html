@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>position 실습</title>
+        <style>
+            #image {
+                margin: 0 auto;
+                width: 220px;
+                height: 315px;
+                background-image: url("https://gangnam.koreaisacademy.com/2023/img/tch/teacher007.png");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+            }
+
+            img.cap {
+                width: 60%;
+                position: absolute;
+                right: 53px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="image">
+            <img
+                src="https://cdn.pixabay.com/photo/2017/07/21/14/28/hat-2525910_1280.png"
+                class="cap"
+            />
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!-- .navbar 클래스를 만들어 가로 방향으로 메뉴 항목을 정렬하고, 배경색을 설정하세요.
+.navbar-item 클래스를 만들어 각 항목에 여백을 추가하고, 텍스트 색상을 흰색으로 설정하세요.
+hover 효과를 추가하여 메뉴 항목에 마우스를 올렸을 때 배경색이 바뀌도록 설정하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>task03</title>
+        <style>
+            .navbar {
+                display: flex;
+                flex-direction: row;
+                background-color: white;
+            }
+
+            .navbar-item {
+                margin: 0 auto;
+                color: white;
+            }
+
+            .navbar:hover {
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="#" class="navbar-item">홈</a>
+            <a href="#" class="navbar-item">서비스</a>
+            <a href="#" class="navbar-item">연락처</a>
+        </nav>
+    </body>
+</html>

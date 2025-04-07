@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>랭킹닭컴</title>
+        <link rel="stylesheet" href="../css/style2.css" />
+        <link
+            rel="icon"
+            href="https://www.rankingdak.com/resources/pc/images/icon/favicon2024.ico"
+        />
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- 공통 헤더:header -->
+            <div class="skip-navi">
+                <a href="#gnb"></a>
+                <a href="#contents"></a>
+            </div>
+            <!--====탑배너========== -->
+            <!-- BG Color -->
+            <div
+                class="top-banner type-pattern"
+                style="background-color: #d3d4ff"
+            >
+                <div class="inner">
+                    <ul class="top-banr-list">
+                        <li>
+                            <a
+                                href="https://www.rankingdak.com/display/coupon/list"
+                            >
+                                <img
+                                    src="https://file.rankingdak.com/image/RANK/BANNER/AR_IMG_1/20241129/IMG1732Pff864436007.jpg"
+                                    alt="배너이미지내용"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- top-banner-->
+            <header id="header" class="header">
+                <section class="header-inner">
+                    <h1 class="logo">
+                        <a href="https://www.rankingdak.com/">
+                            <span class="blind">랭킹닭컴</span>
+                        </a>
+                    </h1>
+                    <div class="logo-pos">
+                        <div class="link-menu">
+                            <p class="on">
+                                <a href="https://www.rankingdak.com/">
+                                    랭킹닭컴
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://www.rankingdak.com/fitness">
+                                    피트니스
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="util">
+                        <ul>
+                            <li>
+                                <a href="https://www.rankingdak.com/auth/login"
+                                    >로그인</a
+                                >
+                            </li>
+                            <li class="before">
+                                <a
+                                    href="https://www.rankingdak.com/member/join/easyJoinCertify?imageUrl=https%3A%2F%2Ffile.rankingdak.com"
+                                    >회원가입</a
+                                >
+                            </li>
+                            <li class="before">
+                                <a href="https://www.rankingdak.com/auth/login"
+                                    >주문조회</a
+                                >
+                            </li>
+                            <li class="before">
+                                <a
+                                    href="https://www.rankingdak.com/service/center"
+                                    >고객센터</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- util -->
+                    <div class="header-search">
+                        <div class="top-search">
+                            <input
+                                type="search"
+                                class="input-search"
+                                id="rankKeyword"
+                                name="rankKeyword"
+                                onkeydown="fnSearchKeyDown(this);"
+                                onkeyup="setAutoKeywordList();"
+                                autocomplete="off"
+                                placeholder="육즙 가득 후랑크 소시지💦 최대 36% 할인"
+                                maxlength="100"
+                            />
+                            <button
+                                type="button"
+                                class="btn-top-search"
+                                id="btnTopSearch"
+                                name="btnTopSearch"
+                                onclick="fnBtnTopSearch(this);"
+                            >
+                                <span class="blind">검색</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- header-search -->
+                    <div class="my-menu">
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://www.rankingdak.com/etc/footer/pedometerIntro"
+                                    class="btn-util-pedometer"
+                                >
+                                    <span class="blind">만보기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.rankingdak.com/display/coupon/list"
+                                    class="btn-util-coupon"
+                                >
+                                    <span class="blind">쿠폰</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.rankingdak.com/auth/login"
+                                    class="btn-util-mypage"
+                                >
+                                    <span class="blind">마이페이지</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.rankingdak.com/order/cart"
+                                    class="btn-util-cart"
+                                >
+                                    <span class="blind">장바구니</span>
+                                    <em class="count">0</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- my-menu -->
+                </section>
+                <!-- header-inner -->
+                <section class="gnb-wrap">
+                    <div class="inner">
+                        <div class="category-wrap">
+                            <a
+                                href="https://www.rankingdak.com/member/join/easyGeneral#all-category"
+                                class="btn-menu-all"
+                            >
+                                <span>카테고리</span>
+                            </a>
+                        </div>
+                        <!-- category wrap -->
+                        <nav id="gnb" class="gnb">
+                            <ul>
+                                <li class>
+                                    <a
+                                        href="https://www.rankingdak.com/display/rank/sale?utm_source=main&utm_medium=main&utm_campaign=1&utm_id=rank"
+                                    >
+                                        <em class="ico-txt-gnb">
+                                            <span class="blind">랭킹</span>
+                                        </em>
+                                    </a>
+                                </li>
+                                <li class>
+                                    <a
+                                        href="https://www.rankingdak.com/landing/content?cont=kingSale2"
+                                    >
+                                        <em class="ico-txt-gnb">
+                                            <span class="blind">특가</span>
+                                        </em>
+                                    </a>
+                                </li>
+                                <li class>
+                                    <a
+                                        href="https://www.rankingdak.com/display/brand/list?utm_source=main&utm_medium=main&utm_campaign=5&utm_id=brand"
+                                    >
+                                        <span>브랜드관</span>
+                                    </a>
+                                </li>
+                                <li class>
+                                    <a
+                                        href="https://www.rankingdak.com/display/onePack/list?utm_source=main&utm_medium=main&utm_campaign=4&utm_id=onepack"
+                                    >
+                                        <span>1팩 담기</span>
+                                    </a>
+                                </li>
+                                <li class>
+                                    <a
+                                        href="https://www.rankingdak.com/mydiet/introduction"
+                                    >
+                                        <em class="ico-txt-gnb">
+                                            <span class="blind">AI식단</span>
+                                        </em>
+                                    </a>
+                                </li>
+                                <li class>
+                                    <a
+                                        href="https://www.rankingdak.com/promotion/event/list?utm_source=main&utm_medium=main&utm_campaign=6&utm_id=event"
+                                    >
+                                        <span>이벤트</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- gnb -->
+                    </div>
+                    <!-- inner -->
+                </section>
+                <!-- gnb-wrap -->
+                <!--  ## header, gnb -->
+            </header>
+            <!-- 공통 헤더 :: header -->
+            <!-- 컨텐츠 영역 :: container -->
+            <section id="contents" class="container">
+                <form
+                    id="join-general-form"
+                    name="join-general-form"
+                    action="/member/join/actionJoinGeneral"
+                    method="post"
+                    onsubmit="return onSubmitJoinGeneral()"
+                    data
+                >
+                    <main
+                        class="join-container join-container2"
+                        style="display: block"
+                    >
+                        <div class="join-area">
+                            <h2 class="join-title">회원가입</h2>
+                            <fieldset class="form-group-area">
+                                <legend>회원가입 항목 작성</legend>
+                                <div class="form-group">
+                                    <div class="form-head">
+                                        <label
+                                            for="member-join-general-id-text"
+                                            class="form-label"
+                                        >
+                                            아이디
+                                            <span
+                                                style="
+                                                    color: #ff6204;
+                                                    font-size: 12px;
+                                                "
+                                                >[필수]</span
+                                            >
+                                        </label>
+                                    </div>
+                                    <!-- form-head -->
+                                    <div class="input-group type-lg w-full">
+                                        <input
+                                            type="text"
+                                            id="member-join-general-id-text"
+                                            name="member-join-general-id-text"
+                                            class="input-text w571"
+                                            placeholder="4~16자 이상 영문 또는 숫자만 사용 가능"
+                                        />
+                                        <span class="input-group-btn">
+                                            <button
+                                                type="button"
+                                                id="btn-id-check"
+                                                class="btn-form btn-default-ex"
+                                            >
+                                                <span>중복확인</span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div
+                                        id="member-join-general-id-text-error"
+                                    ></div>
+                                </div>
+                                <!-- form-group -->
+                                <div class="form-group">
+                                    <div class="form-head">
+                                        <label
+                                            for="member-join-general-pw-text"
+                                            class="form-label"
+                                        >
+                                            비밀번호
+                                            <span
+                                                style="
+                                                    color: #ff6204;
+                                                    font-size: 12px;
+                                                "
+                                                >[필수]</span
+                                            >
+                                        </label>
+                                    </div>
+                                    <!-- form-head -->
+                                    <div class="input-group type-lg w-full">
+                                        <label
+                                            for="member-join-general-pw-text"
+                                            class="blind"
+                                            >비밀번호 입력</label
+                                        >
+                                        <input
+                                            type="password"
+                                            id="member-join-general-pw-text"
+                                            name="member-join-general-pw-text"
+                                            class="input-text w571"
+                                            placeholder="6 ~ 16자 영문, 숫자, 특수문자 1개 이상씩 혼용 필수"
+                                        />
+                                    </div>
+                                    <div class="input-group type-lg w-full">
+                                        <label
+                                            for="member-join-general-pw-confirm-text"
+                                            class="blind"
+                                            >비밀번호 확인</label
+                                        >
+                                        <input
+                                            type="password"
+                                            id="member-join-general-pw-confirm-text"
+                                            name="member-join-general-pw-confirm-text"
+                                            class="input-text w571"
+                                            placeholder="비밀번호 확인"
+                                        />
+                                    </div>
+                                    <p
+                                        class="valid error"
+                                        id="pw-error-text1"
+                                        style="display: none"
+                                    >
+                                        비밀번호가 일치하지 않습니다.
+                                    </p>
+                                </div>
+                                <!-- form-group -->
+                                <div class="form-group">
+                                    <div class="form-head">
+                                        <label
+                                            for="member-join-general-email-text"
+                                            class="form-label"
+                                        >
+                                            이메일
+                                            <span
+                                                style="
+                                                    color: #ff6204;
+                                                    font-size: 12px;
+                                                "
+                                                >[필수]</span
+                                            >
+                                        </label>
+                                    </div>
+                                    <!-- form-head -->
+                                    <div class="input-group type-lg w-full">
+                                        <input
+                                            type="text"
+                                            id="member-join-general-email-text"
+                                            name="member-join-general-email-text"
+                                            class="input-text w571"
+                                            placeholder="이메일 주소"
+                                        />
+                                        <div class="input-group-form">
+                                            <div
+                                                class="ui-select select-box w135"
+                                                id="member-join-general-email-domain"
+                                                name="member-join-general-email-domain"
+                                            >
+                                                <a
+                                                    href="#none"
+                                                    title="선택"
+                                                    class="select-value"
+                                                >
+                                                    <span>직접입력</span>
+                                                </a>
+                                                <div class="select-list">
+                                                    <ul>
+                                                        <li data-name>
+                                                            <a href="#none">
+                                                                <span
+                                                                    >직접입력</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="naver.com"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >naver.com</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="daum.net"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >daum.net</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="hanmail.net"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >hanmail.net</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="gmail.com"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >gmail.com</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="hotmail.com"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >hotmail.com</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="yahoo.com"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >yahoo.com</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="chollian.net"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >chollian.net</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="empal.com"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >empal.com</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="freechal.com"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >freechal.com</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="hitel.net"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >hitel.net</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="hanmir.com"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >hanmir.com</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="hanafos.com"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >hanafos.com</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="korea.com"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >korea.com</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="lycos.co.kr"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >lycos.co.kr</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="nate.com"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >nate.com</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="netian.com"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >netian.com</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="paran.com"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >paran.com</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                        <li
+                                                            data-name="unitel.co.kr"
+                                                        >
+                                                            <a href="#none">
+                                                                <span
+                                                                    >unitel.co.kr</span
+                                                                >
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        id="member-join-general-id-text-error"
+                                    ></div>
+                                </div>
+                                <!-- form-group -->
+                                <div class="form-group reco-check">
+                                    <div class="form-head">
+                                        <label
+                                            for="member-join-general-recomender-text"
+                                            class="form-label"
+                                        >
+                                            추천 아이디
+                                            <span
+                                                style="
+                                                    color: #999999;
+                                                    font-size: 12px;
+                                                "
+                                                >[선택]</span
+                                            >
+                                        </label>
+                                    </div>
+                                    <!-- form-head -->
+                                    <div class="input-group type-lg w-full">
+                                        <input
+                                            type="text"
+                                            id="member-join-general-recomender-text"
+                                            name="member-join-general-recomender-text"
+                                            class="input-text"
+                                            placeholder="추천아이디 입력"
+                                        />
+                                        <span class="input-group-btn">
+                                            <button
+                                                type="button"
+                                                class="btn-form btn-default-ex"
+                                            >
+                                                <span>확인하기</span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <ul class="bl-list-type2 mt10">
+                                    <li>
+                                        추천아이디는 [선택]사항으로 추천인이
+                                        있을 경우에만 입력해주세요.
+                                    </li>
+                                </ul>
+                                <!-- form-group -->
+                            </fieldset>
+                            <div class="btn-bottom-area">
+                                <button
+                                    type="submit"
+                                    id="member-join-general-submit-btn"
+                                    class="btn-basic-lg2 btn-primary"
+                                >
+                                    <span>회원가입</span>
+                                </button>
+                            </div>
+                            <!-- btn-bottom-area -->
+                        </div>
+                        <!-- join-area -->
+                    </main>
+                </form>
+            </section>
+            <!-- 컨텐츠 영역 :: container -->
+            <!-- 공통 푸터 :: footer :: -->
+            <footer id="footer" class="footer">
+                <div class="footer-menu">
+                    <div class="frame-sm">
+                        <ul class="footer-menu-list">
+                            <li id="no-line">
+                                <a
+                                    href="https://www.rankingdak.com/etc/footer/company"
+                                    >회사소개</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.rankingdak.com/service/notice"
+                                    >공지사항</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.rankingdak.com/product/storeInquiry"
+                                    >입점 · 제휴 · 광고문의</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.rankingdak.com/etc/footer/uselaw"
+                                    >이용약관</a
+                                >
+                            </li>
+                            <li>
+                                <a href="" class="text-black2 text-md"
+                                    >개인정보처리방침</a
+                                >
+                            </li>
+                        </ul>
+                        <!-- footer-menu-list -->
+                        <div class="family-select">
+                            <button type="button" class="select-btn">
+                                <span>패밀리사이트</span>
+                                <i class="ico-arr-toggle"></i>
+                            </button>
+                            <div class="family-list-box"></div>
+                        </div>
+                        <!-- family-select -->
+                    </div>
+                    <!-- footer-info-list -->
+                </div>
+                <!-- frame-sm -->
+                <div class="footer-info">
+                    <strong class="footer-logo">
+                        <span class="blind">랭킹닭컴</span>
+                    </strong>
+                    <div class="colum-info">
+                        <h5 class="blind">회사 정보</h5>
+                        <ul class="footer-biz-info">
+                            <li class="no-line">
+                                <span class="company-name">(주)푸드나무</span>
+                            </li>
+                            <li>대표 : 김도형</li>
+                            <li>
+                                주소 : 서울특별시 마포구 월드컵북로 396,
+                                15층(상암동, 누리꿈스퀘어 비지니스타워)
+                            </li>
+                            <li>
+                                사업자등록번호 : 105-87-81968
+                                <span class="biz-information">
+                                    <a href="javascript:bizPop();"
+                                        >사업자정보 확인</a
+                                    >
+                                </span>
+                            </li>
+                            <li>통신판매업신고번호 : 제2015-서울마포-1058호</li>
+                            <li class="no-line">개인정보보호책임자 : 추교윤</li>
+                        </ul>
+                        <p class="copyright">
+                            Copyright©랭킹닭컴 All rights reserved.
+                        </p>
+                    </div>
+                    <!-- colum -->
+                    <div class="colum-info">
+                        <ul class="customer-info">
+                            <li class="cscenter">
+                                고객센터
+                                <em class="footer-tel">02-6405-8088</em>
+                            </li>
+                            <li>FAX. 02-6351-8088</li>
+                            <li>E-mail. help@foodnamoo.com</li>
+                        </ul>
+                        <div class="customer-btns">
+                            <a
+                                href="https://www.rankingdak.com/member/join/easyJoinCertify?imageUrl=https%3A%2F%2Ffile.rankingdak.com"
+                            >
+                                <span>고객의 제안</span>
+                            </a>
+                            <a
+                                href="https://www.rankingdak.com/member/join/easyJoinCertify?imageUrl=https%3A%2F%2Ffile.rankingdak.com"
+                            >
+                                <span>1:1 문의</span>
+                            </a>
+                        </div>
+                        <ul class="footer-sns-list">
+                            <li>
+                                <a
+                                    href="https://www.facebook.com/rankingdakcom"
+                                >
+                                    <i class="ico-sns-facebook"></i>
+                                    <span class="blind">페이스북</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.instagram.com/rankingdak_official/#"
+                                >
+                                    <i class="ico-sns-instagram"></i>
+                                    <span class="blind">인스타그램</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.naver.com/rankingdak">
+                                    <i class="ico-sns-blog"></i>
+                                    <span class="blind">네이버블로그</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://post.naver.com/my.nhn?memberNo=9267177"
+                                >
+                                    <i class="ico-sns-post"></i>
+                                    <span class="blind">네이버포스트</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://pf.kakao.com/_ltFRl">
+                                    <i class="ico-sns-kakaotalk"></i>
+                                    <span class="blind">카카오톡</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/c/rankingdakcom"
+                                >
+                                    <i class="ico-sns-youtube"></i>
+                                    <span class="blind">유튜브</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- colum -->
+                </div>
+                <!-- footer-info -->
+                <div class="footer-bottom">
+                    <ul class="service-txt">
+                        <li>
+                            <a href="">
+                                <i class="ico-footer-service02"></i>
+                                우리은행 구매 안전 서비스 가입사실 확인
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- 공통 푸터 :: footer :: -->
+        </div>
+        <!-- //wrap -->
+    </body>
+</html>

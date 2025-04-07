@@ -1,0 +1,29 @@
+<!-- ID가 primary-btn인 버튼에 배경색을 파란색으로, 글씨 색상을 흰색으로 설정하세요.
+클래스가 btn인 버튼에 패딩을 10px 20px로 설정하세요.
+primary-btn 버튼은 마우스를 올렸을 때 배경색이 어두운 파란색으로 변하게 설정하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .btn {
+                padding: 10px 20px;
+            }
+
+            #primary-btn {
+                background-color: blue;
+                color: white;
+            }
+
+            #primary-btn:hover {
+                background-color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="primary-btn" class="btn">제출</button>
+        <button class="btn">취소</button>
+    </body>
+</html>

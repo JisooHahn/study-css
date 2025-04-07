@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>바깥 여백</title>
+        <style>
+            body {
+                font-size: 35px;
+            }
+
+            #div1 {
+                border: 1px solid black;
+                /* 상하좌우 4방향 모두 30px로 적용 */
+                margin: 30px;
+            }
+
+            /* margin은 아래 여백과 위 여백이 만나면 겹친다. */
+            /* 이 때, 큰 px값으로 반영된다. */
+            #div2 {
+                border: 1px solid #e10;
+                /* 순서대로 위, 오른쪽, 아래, 왼쪽 */
+                margin: 30px 0 30px 0;
+            }
+
+            #div3 {
+                border: 1px solid hotpink;
+                /* 순서대로 위-아래, 왼쪽-오른쪽 */
+                /* auto라는 값은 padding에 없다. */
+                margin: 20px 30px;
+            }
+
+            #div-wrap {
+                display: flex;
+            }
+
+            #div4 {
+                margin-top: 0;
+                margin-right: 10px;
+                margin-bottom: 20px;
+                margin-left: 30px;
+                border: 1px solid brown;
+            }
+
+            #div5 {
+                border: 1px solid yellowgreen;
+                /* 순서대로 위, 좌우, 아래 */
+                margin: 0 30px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="div1">안녕하세요 DIV1입니다.</div>
+            <div id="div2">안녕하세요 DIV2입니다.</div>
+            <div id="div3">안녕하세요 DIV3입니다.</div>
+            <div id="div-wrap">
+                <div id="div4">안녕하세요 DIV4입니다.</div>
+                <div id="div5">안녕하세요 DIV5입니다.</div>
+            </div>
+        </div>
+    </body>
+</html>

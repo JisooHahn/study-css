@@ -1,0 +1,36 @@
+<!-- ID가 card-1인 카드에 배경색을 연한 회색으로 설정하고, 테두리를 1px 실선으로 설정하세요.
+클래스가 card인 모든 카드에 상단 여백(margin-top)을 20px로 설정하세요.
+card-1에 있는 제목은 글씨 색상을 파란색으로 설정하세요.
+입력 HTML: -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>task02</title>
+        <style>
+            #card-1 {
+                background-color: lightgray;
+                border: 1px solid;
+            }
+
+            .card {
+                margin-top: 20px;
+            }
+
+            #card-1 h2 {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="card-1" class="card">
+            <h2>카드 1 제목</h2>
+            <p>카드 내용 1</p>
+        </div>
+        <div class="card">
+            <h2>카드 2 제목</h2>
+            <p>카드 내용 2</p>
+        </div>
+    </body>
+</html>

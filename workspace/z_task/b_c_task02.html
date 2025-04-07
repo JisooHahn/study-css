@@ -1,0 +1,39 @@
+<!-- 목표: HTML 문서에 버튼을 만들고, 여러 스타일을 적용하세요.
+
+문제 설명:
+.btn-primary 클래스를 만들어 버튼의 배경색을 파란색, 텍스트 색상을 흰색으로 설정하고, 버튼에 둥근 모서리를 추가하세요.
+.btn-secondary 클래스를 만들어 버튼의 배경색을 회색, 텍스트 색상을 검정색으로 설정하세요.
+.btn:hover 클래스를 만들어 버튼에 마우스를 올렸을 때 배경색이 어두운 색으로 바뀌도록 하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>task02</title>
+        <style>
+            .btn-primary {
+                background-color: blue;
+                color: white;
+                border-radius: 20px;
+                transition-property: background-color;
+            }
+
+            .btn-secondary {
+                background-color: gray;
+                color: black;
+                transition-property: background-color;
+            }
+
+            .btn-primary:hover,
+            .btn-secondary:hover {
+                background-color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="btn">
+            <button class="btn-primary">기본 버튼</button>
+            <button class="btn-secondary">세컨드 버튼</button>
+        </div>
+    </body>
+</html>

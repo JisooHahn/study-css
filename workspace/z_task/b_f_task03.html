@@ -1,0 +1,32 @@
+<!-- ID가 error-msg인 알림 메시지에 배경색을 빨간색으로 설정하고, 글씨 색상을 흰색으로 설정하세요.
+클래스가 msg인 모든 메시지에는 글꼴 크기를 14px로 설정하고, 상단 여백(margin-top)을 20px로 설정하세요.
+error-msg는 가로 길이를 300px로 설정하고, 패딩을 10px로 설정하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>task03</title>
+        <style>
+            #error-msg {
+                background-color: red;
+                color: white;
+            }
+
+            .msg {
+                font-size: 14px;
+                margin-top: 20px;
+            }
+
+            #error-msg {
+                width: 300px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="error-msg" class="msg">오류가 발생했습니다!</div>
+        <div class="msg">알림 메시지 1</div>
+        <div class="msg">알림 메시지 2</div>
+    </body>
+</html>

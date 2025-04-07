@@ -1,0 +1,20 @@
+/* 모든 <h1> 요소에 대해 글자 색상을 blue로 설정하세요.
+클래스가 highlighted인 요소에 대해 글자 색상을 red로 설정하세요.
+아이디가 main-heading인 요소에 대해 글자 색상을 green으로 설정하세요. */
+h1{
+    color: blue;
+}
+
+.highlighted{
+    color: red !important;
+}
+
+#main-heading{
+    color: green;
+}
+
+.container p{
+    color: orange;
+}
+
+/* h1의 최종 색상은 green, blue 보다 밑에 설정되었기 때문 */

@@ -1,0 +1,35 @@
+<!-- 네이버 폰트에서 1개 가져와 적용하기 -->
+<!-- 서비스 되고 있는 사이트의 폰트를 찾아서 적용하기 -->
+
+<!-- 폰트를 우선 찾고 나서 -->
+<!-- 1. 기본 폰트인지 확인하기 -->
+<!-- 2. 개발자 모드에서 Element(요소)탭 혹은 Network 탭에서 검색 -->
+<!-- 3. 적용이 도저히 안되고 못찾겠다면, 직접 검색해서 폰트 다운로드 하기 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>폰트 적용 실습</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+            @font-face {
+                font-family: "Montserrat";
+                src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap")
+                    format("woff2");
+            }
+
+            h1 {
+                font-family: "Montserrat";
+                font-size: 18px;
+                font-weight: 700;
+                font-optical-sizing: auto;
+                font-style: normal;
+                color: #1c1c1e;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>스포츠MD</h1>
+    </body>
+</html>

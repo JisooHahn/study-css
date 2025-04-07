@@ -1,0 +1,39 @@
+<!-- 목표: HTML 문서에 있는 텍스트의 스타일을 변경하세요.
+
+문제 설명:
+.important-text 클래스를 만들어 텍스트 색상을 빨간색으로 변경하고, 굵은 글씨로 만드세요.
+.subheading 클래스를 만들어 텍스트 크기를 18px로 설정하고, 밑줄을 추가하세요.
+.highlight 클래스를 만들어 텍스트 색상을 노란색으로 변경하고, 배경색을 파란색으로 설정하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>task01</title>
+        <style>
+            * {
+                font-size: 24px;
+            }
+
+            .important-text {
+                color: red;
+                font-weight: bold;
+            }
+
+            .subheading {
+                font-size: 18px;
+                text-decoration: underline;
+            }
+
+            .highlight {
+                color: yellow;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="important-text">이 텍스트는 중요한 내용입니다.</p>
+        <p class="subheading">이 텍스트는 서브헤딩입니다.</p>
+        <p class="highlight">이 텍스트는 강조 표시된 텍스트입니다.</p>
+    </body>
+</html>

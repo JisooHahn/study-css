@@ -1,0 +1,1304 @@
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('../fonts/Pretendard-Bold.subset.woff2') format('woff2'), url('font/Pretendard-Bold.subset.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('../fonts/Pretendard-Medium.subset.woff2') format('woff2'), url('font/Pretendard-Medium.subset.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('../fonts/Pretendard-Regular.subset.woff2') format('woff2'), url('font/Pretendard-Regular.subset.woff') format('woff');
+}
+
+title{
+    display: none;
+}
+
+html, body {
+    height: 100%;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Pretendard', sans-serif;
+    word-break: break-all;
+}
+
+div, section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+input::placeholder{
+    color: #ccc;
+}
+
+input#rankKeyword::placeholder{
+    color: #767676;
+}
+
+button, input, optgroup, select, textarea {
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+label {
+    cursor: default;
+}
+
+button {
+    background: none;
+    font-family: 'Pretendard', sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-image: none;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button .blind {
+    position: relative;
+    font-size: 0;
+    color: transparent;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+
+
+a {
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+    overflow: clip;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+legend, caption {
+    position: absolute;
+    left: -99999px;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -99999px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.wrap {
+    position: relative;
+    min-width: 1300px;
+    max-width: 1920px;
+}
+
+.container {
+    position: relative;
+    min-height: 700px;
+    padding-bottom: 100px;
+}
+
+.top-banner {
+    position: relative;
+    width: 100%;
+    height: 43px;
+    overflow: hidden;
+}
+
+.top-banr-list {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.top-banr-list > li {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.top-banner.type-pattern .top-banr-list > li {
+    width: 100%;
+}
+
+.top-banr-list > li img {
+    height: 42px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    z-index: 20;
+    background-color: #fff;
+}
+
+.header-inner {
+    position: relative;
+    max-width: 1100px;
+    min-height: 120px;
+    margin: 0 auto;
+}
+
+.header-inner .logo {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 180px;
+    height: 46px;
+    background-image: url(https://www.rankingdak.com/resources/pc/images/logo.png);
+    background-repeat: no-repeat;
+}
+
+.header-inner .logo > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.logo-pos {
+    position: absolute;
+    top: 65px;
+    left: 140px;
+}
+
+.logo-pos .link-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.logo-pos .link-menu p {
+    color: #999;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+}
+
+.logo-pos .link-menu p.on {
+    color: #ff6001;
+    font-weight: 700;
+}
+
+.logo-pos .link-menu p:nth-of-type(1):after {
+    width: 1px;
+    content: "";
+    height: 14px;
+    display: inline-block;
+    background-color: #D9D9D9;
+    margin-left: 5px;
+}
+
+.header-inner .util {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.util > ul {
+    overflow: hidden;
+    transform: translateX(19px);
+}
+
+.util > ul > li {
+    float: left;
+    position: relative;
+    padding: 0 12px 0 0;
+    font-size: 13px;
+    color: #4D4D4D;
+}
+
+.util > ul > li.before:before {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 10px;
+    vertical-align: middle;
+    background: #E6E6E6;
+    margin: -2px 11px 0 0;
+}
+
+.header-inner .header-search {
+    position: absolute;
+    top: 60px;
+    left: 370px;
+    text-align: center;
+    z-index: 100;
+    width: 380px;
+}
+
+.top-search {
+    position: relative;
+    display: inline-block;
+    width: 380px;
+    height: 40px;
+    border: 1px solid #FFA751;
+    border-radius: 6px;
+    background: #fff;
+    padding: 0 45px 0 15px;
+}
+
+.top-search .input-search {
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #555;
+    text-align: left;
+    background: transparent;
+}
+
+input[type="search"] {
+    box-sizing: content-box;
+    outline-offset: -2px;
+}
+
+.top-search .btn-top-search {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    transform: translateY(-50%);
+}
+
+
+.btn-top-search:after {
+    display: inline-block;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url(https://www.rankingdak.com/resources/pc/images/icon/ico_header_search.svg);
+    vertical-align: top;
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-inner .my-menu {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    transform: translateX(9px);
+}
+
+.my-menu > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 6px;
+}
+
+.btn-util-pedometer {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url(https://www.rankingdak.com/resources/pc/images/icon/top-util-pedometer.png) no-repeat center / auto 48px;
+}
+
+.btn-util-coupon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url(https://www.rankingdak.com/resources/pc/images/icon/top-util-compiltaion.png);
+    background-size: auto 48px;
+    background-position: 0% center;
+}
+
+.btn-util-mypage {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url(https://www.rankingdak.com/resources/pc/images/icon/top-util-compiltaion.png);
+    background-size: auto 48px;
+    background-position: 50% center;
+}
+
+.btn-util-cart {
+    display: inline-block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-image: url(https://www.rankingdak.com/resources/pc/images/icon/top-util-compiltaion.png);
+    background-size: auto 48px;
+    background-position: 100% center;
+}
+
+.btn-util-cart .count {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: "Malgun Gothic";
+    text-align: center;
+    line-height: 1.6;
+    background: #FF542A;
+    border-radius: 50%;
+}
+
+.gnb-wrap {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    z-index: 101;
+}
+
+.gnb-wrap .inner {
+    display: flex;
+    position: relative;
+    width: 1100px;
+    min-width: 1100px;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 140px;
+}
+
+.gnb-wrap .category-wrap {
+    position: absolute;
+    width: 160px;
+    bottom: 0;
+    left: -20px;
+}
+
+.gnb-wrap .gnb {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-wrap .btn-menu-all {
+    position: relative;
+    display: block;
+    width: 160px;
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    transition: .1s;
+    -webkit-transition: .1s;
+    padding: 19px 0;
+    line-height: 1;
+    line-height: 20px;
+}
+
+.btn-menu-all:before {
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    content: '';
+    vertical-align: middle;
+    background: url(https://www.rankingdak.com/resources/pc/images/icon/ico_gnb_all.png) 0 0;
+    margin: -3px 10px 0 20px;
+}
+
+.btn-menu-all:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 21px;
+    right: 0;
+    width: 1px;
+    height: 16px;
+    background: #ccc;
+}
+
+.gnb-wrap .gnb {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gnb-wrap .inner:after, .gnb-wrap:after, .gnb-wrap .gnb > ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 47px;
+    /* padding-right: 28px; */
+}
+
+.gnb-wrap .gnb > ul > li {
+    word-break: keep-all;
+}
+
+.gnb > ul > li > a {
+    display: block;
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    padding: 18px 22px 18px;
+    height: 100%;
+    white-space: nowrap;
+    line-height: 20px;
+}
+
+.gnb > ul > li .ico-txt-gnb {
+    /* display: inline-block; */
+    width: 90px;
+    height: 17px;
+    overflow: hidden;
+    background: url(https://www.rankingdak.com/resources/pc/images/txt/txt_exp_delivery.png) center right no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 1px;
+    float: right;
+}
+
+li:first-child > a > em.ico-txt-gnb{
+    background-image: url(https://file.rankingdak.com/image/RANK/BANNER/GNB_ICON/20240711/IMG1720Rqp680921164.png);
+}
+
+li:nth-child(2) > a > em.ico-txt-gnb{
+    background-image: url(https://file.rankingdak.com/image/RANK/BANNER/GNB_ICON/20241227/IMG1735jQl289994371.png);
+}
+
+li:nth-child(5) > a > em.ico-txt-gnb{
+    background-image: url(https://file.rankingdak.com/image/RANK/BANNER/GNB_ICON/20241220/IMG1734orE663341865.png);
+}
+
+.all-depth-cate {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+}
+
+.join-container {
+    min-height: 700px;
+    background: #f7f7f7;
+    padding: 100px 0;
+}
+
+.join-area {
+    width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 60px 100px 90px;
+}
+
+.join-container2 .join-area {
+    border-radius: 20px;
+}
+
+.join-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.join-container2 .join-area .join-title {
+    font-size: 26px;
+    color: #333333;
+    font-weight: 700;
+    text-align: left;
+}
+
+.form-group-area {
+    padding: 0;
+}
+
+.form-group + .form-group {
+    margin-top: 20px;
+}
+
+.join-area .form-group {
+    position: relative;
+    padding-left: 105px;
+    min-height: 50px;
+}
+
+.join-container2 .join-area .form-group {
+    padding-left: 0;
+}
+
+.join-area .form-group .form-head {
+    position: absolute;
+    top: 14px;
+    left: 0;
+}
+
+.join-container2 .join-area .form-group .form-head {
+    position: relative;
+    top: initial;
+    left: initial;
+    padding-bottom: 8px;
+}
+
+.form-group .form-label {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    font-weight: normal;
+}
+
+.form-group .form-head > .form-label {
+    display: inline-block;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.input-group {
+    height: 40px;
+}
+
+.wp100, .w-full {
+    width: 100% !important;
+}
+
+.input-group.type-lg {
+    height: 50px;
+}
+
+.join-area .form-group-area legend + .form-group .form-head ~ .input-group {
+    margin-top: 0;
+}
+
+.input-text {
+    height: 40px;
+    padding: 5px 15px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 13px;
+    border-radius: 0;
+}
+
+.input-group > .input-text {
+    position: relative;
+    display: table-cell;
+    float: left;
+    width: 100%;
+    z-index: 2;
+}
+
+.input-group .input-text {
+    height: 100%;
+    height: 40px;
+    padding: 3px 15px;
+}
+
+.input-group.type-lg ~ .input-group.type-lg {
+    margin-top: 20px;
+}
+
+.input-group.type-lg .input-text, .input-text.type-lg {
+    height: 50px;
+    padding: 3px 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.join-container2 .input-group.type-lg .input-text {
+    border-radius: 6px;
+}
+
+.input-group.type-lg > .input-group-form, .input-group.type-lg > .input-group-btn {
+    display: table-cell;
+    position: relative;
+    white-space: nowrap;
+    width: 1%;
+    vertical-align: middle;
+    border: 0;
+    padding: 0 3px;
+}
+
+.btn-form {
+    display: inline-block;
+    height: 42px;
+    padding: 0 13px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.input-group.type-lg .input-group-btn .btn-form {
+    height: 50px;
+    padding: 0 10px;
+    min-width: auto;
+    font-size: 13px;
+}
+
+.join-container2 .input-group.type-lg .input-group-btn .btn-form {
+    border-radius: 6px;
+}
+
+.btn-default-ex {
+    background: #fff;
+    color: #333;
+    border: 1px solid #666;
+}
+
+.join-area .form-group-area .input-group.type-lg .btn-form.btn-default-ex {
+    color: #666;
+}
+
+.select-box {
+    display: inline-block;
+    min-width: 120px;
+    position: relative;
+    height: 40px;
+    vertical-align: top;
+    z-index: 2;
+    text-align: left;
+    max-width: 100%;
+}
+
+.input-group.type-lg .select-box, .input-group.type-lg .btn-form, .input-group.type-lg .select, .input-group.type-lg .btn-form {
+    height: 50px;
+}
+
+.input-group > .input-text + .input-group-form:last-child, .input-group > .input-text + .input-group-btn:last-child {
+    padding: 0 0 0 5px;
+}
+
+.input-group.type-lg > .input-text + .input-group-form:last-child, .input-group.type-lg > .input-text + .input-group-btn:last-child {
+    padding: 0 0 0 6px;
+}
+
+.text-guide-sm2 {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+}
+
+.input-group ~ .valid, .input-group ~ .text-guide-sm, .input-group ~ .text-guide-sm2 {
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.valid {
+    font-size: 13px;
+    color: #3A4C67;
+}
+
+.error {
+    color: #FF490F;
+}
+
+.w135 {
+    width: 135px !important;
+}
+
+.select-box .select-value {
+    display: block;
+    position: relative;
+    height: 100%;
+    padding: 0 36px 0 15px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.join-container2 .select-box .select-value {
+    border-radius: 6px;
+}
+
+.select-box .select-value:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #555;
+    border-left: 1px solid #555;
+    transform: rotate(225deg) translateY(100%);
+}
+
+.select-box .select-list li:first-child {
+    margin-top: 0;
+}
+.select-box .select-list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 17px 10px;
+    background: #fff;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.select-box .select-list li + li {
+    border-top: 1px solid #ddd;
+}
+
+.select-box .select-value > span {
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    word-break: break-all;
+    color: #999;
+}
+
+.select-list{
+    visibility: hidden;
+}
+
+.text-guide-sm2{
+    visibility: hidden;
+}
+
+button span {
+    position: relative;
+}
+
+.btn-form > span {
+    display: inline-block;
+    height: 100%;
+    line-height: 2.8;
+}
+
+.input-group.type-lg .btn-form > span {
+    line-height: 3.8;
+}
+
+.input-group.type-lg .input-text, .input-text.type-lg {
+    height: 50px;
+    padding: 3px 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.join-container2 .input-group.type-lg .input-text {
+    border-radius: 6px;
+}
+
+.form-group .form-head ~ .form-box, .form-group .form-head ~ .textarea-box, .form-group .form-head ~ .input-group-wrap, .form-group .form-head ~ .input-group, .form-group .form-label ~ .input-group, .form-group .input-group ~ .input-group {
+    margin-top: 6px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.bl-text-type2:before, .bl-list-type2 > li:before {
+    display: inline-block;
+    content: '※';
+    vertical-align: middle;
+    margin: -3px 3px 0 -11px;
+}
+
+.bl-text-type2, .bl-list-type2 > li {
+    color: #999;
+    font-size: 12px;
+    padding-left: 11px;
+    word-break: break-word;
+    text-align: left;
+}
+
+.btn-bottom-area {
+    position: relative;
+    text-align: center;
+}
+
+.join-container .btn-bottom-area {
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.join-area .btn-bottom-area {
+    margin-top: 40px;
+}
+
+.join-area .form-group-area + .btn-bottom-area {
+    margin-top: 24px;
+}
+
+[class*="btn-basic-"], [class*="btn-option"], [class*="btn-rud-"] {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+[class*="btn-basic-"], [class*="btn-option"] {
+    border-radius: 6px;
+}
+
+.btn-basic-lg2 {
+    min-width: 180px;
+    height: 48px;
+    padding: 10px 25px 11px;
+}
+
+.btn-primary {
+    background: #ff6001;
+    color: #fff;
+    border: 1px solid #ff6001;
+}
+
+.login-area .btn-bottom-area .btn-basic-lg2, .join-area .btn-bottom-area .btn-basic-lg2 {
+    width: calc(50% - 5px);
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 400;
+}
+
+.join-area .btn-bottom-area .btn-basic-lg2:only-child {
+    width: 260px;
+}
+
+.join-container2 .join-area .btn-bottom-area .btn-basic-lg2:only-child {
+    width: 520px;
+    border-right: 5px;
+    border-radius: 6px;
+}
+
+.btn-basic-lg2 > span {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.login-area .btn-bottom-area .btn-basic-lg2 span, .join-area .btn-bottom-area .btn-basic-lg2 span {
+    line-height: 2;
+}
+
+.footer-menu {
+    width: 100%;
+    max-width: 1920px;
+    min-height: 48px;
+    padding: 19px 0 20px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+.frame-sm {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.family-select {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+    width: 215px;
+}
+
+.footer-menu-list > li {
+    display: inline-block;
+    padding: 0 16px 0 0;
+}
+
+.footer-menu-list > li > a {
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-menu-list > li:before {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 13px;
+    vertical-align: middle;
+    background: #ccc;
+    margin: 0px 20px 0 0;
+}
+
+#no-line:before {
+    display: none;
+}
+
+.text-md {
+    font-weight: 500 !important;
+}
+
+.text-black2 {
+    color: #333 !important;
+}
+
+.family-select .select-btn {
+    color: #666;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    padding: 0 25px;
+    display: block;
+    width: 100%;
+}
+
+.family-select button.select-btn {
+    padding: 0 25px;
+}
+
+.family-select .family-list-box {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+[class*="ico-arr-"] {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    transition: .2s;
+    transform: translateX(0);
+}
+
+.family-select .select-btn .ico-arr-toggle {
+    position: absolute;
+    top: 3px;
+    right: 15px;
+}
+
+[class*="ico-arr-"]:after, [class*="ico-arr-"]:before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-color: #000;
+    box-shadow: inset 0 0 0 32px;
+}
+
+.ico-arr-toggle:before {
+    top: 50%;
+    right: 0;
+    width: 60%;
+    height: 1px;
+    transform: rotate(-45deg);
+}
+
+.family-select .select-btn .ico-arr-toggle:before {
+    transform: rotate(45deg);
+}
+
+[class*="ico-arr-"]:after, [class*="ico-arr-"]:before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-color: #000;
+    box-shadow: inset 0 0 0 32px;
+}
+
+.ico-arr-toggle:after {
+    top: 50%;
+    left: 0;
+    width: 60%;
+    height: 1px;
+    transform: rotate(45deg);
+}
+
+.family-select .select-btn .ico-arr-toggle:after {
+    transform: rotate(-45deg);
+}
+
+.frame-wrap, .clear:after, [class*="frame-"]:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.footer-info {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 0 45px 167px;
+    overflow: hidden;
+}
+
+.footer-info .footer-logo {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    display: block;
+    width: 100px;
+    height: 38px;
+    background: url(https://www.rankingdak.com/resources/pc/images/footer_logo.png?ver=20230412) 0 0 no-repeat;
+    background-size: contain;
+    margin-bottom: 26px;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+}
+
+.footer-biz-info {
+    padding-right: 55px;
+}
+
+.colum-info .copyright {
+    margin-top: 10px;
+    color: #666;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.footer-biz-info li {
+    font-size: 13px;
+    color: #666;
+    line-height: 23px;
+    display: inline;
+}
+
+.footer-biz-info li:first-child {
+    display: block;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 16px;
+    color: #333;
+}
+
+.footer-biz-info li .company-name {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.footer-biz-info li::after {
+    display: inline-block;
+    content: '|';
+    padding: 0 3px;
+}
+
+.footer-biz-info .biz-information {
+    text-decoration: underline;
+}
+
+.footer-info .colum-info {
+    position: relative;
+    float: left;
+    width: 50%;
+    font-size: 12px;
+    color: #666;
+}
+
+.colum-info .no-line::after{
+    display: none;
+    content: none;
+}
+
+.footer-info .customer-btns {
+    margin-top: 8px;
+}
+
+.footer-sns-list {
+    margin-top: 18px;
+    overflow: hidden;
+}
+
+.footer-info .customer-info > li {
+    display: inline-block;
+    margin-right: 10px;
+    color: #777;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.footer-info .customer-info > li.cscenter {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.footer-info .customer-info > li.cscenter .footer-tel {
+    display: block;
+    font-size: 22px;
+    line-height: 16px;
+    font-weight: 600;
+    margin: 16px 0 9px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.footer-info .customer-info > li.cscenter .footer-tel::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url(https://www.rankingdak.com/resources/pc/images/icon/ico-tel-black.png);
+    background-size: 100%;
+    background-position: center;
+}
+
+.footer-info .customer-btns > a {
+    display: inline-block;
+    font-size: 11px;
+    color: #777;
+    border: 1px solid #ccc;
+    margin-right: 3px;
+    padding: 0 6px;
+    height: 22px;
+    line-height: 2;
+    border-radius: 4px;
+}
+
+.footer-sns-list > li {
+    float: left;
+    margin-right: 10px;
+}
+
+[class^="ico-sns-"] {
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    background-image: url(https://www.rankingdak.com/resources/pc/images/icon/ico_footer_sns_dark.png);
+}
+
+.ico-sns-facebook {
+    background-position: 0 0;
+}
+
+.ico-sns-instagram {
+    background-position: -40px 0;
+}
+
+.ico-sns-blog {
+    background-position: -80px 0;
+}
+
+.ico-sns-post {
+    background-position: -120px 0;
+}
+
+.ico-sns-kakaotalk {
+    background-position: -160px 0;
+}
+
+.ico-sns-youtube {
+    background-position: -200px 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid #eee;
+    width: 1100px;
+    margin: 0 auto 0;
+    padding: 14px 0 17px;
+}
+
+.footer-bottom .service-txt {
+    text-align: center;
+}
+
+.footer-bottom .service-txt li {
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+    color: #666;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.ico-footer-service02 {
+    background-position: right top;
+    width: 18px;
+    margin-top: -2px;
+}
+
+[class^="ico-footer-"] {
+    display: inline-block;
+    vertical-align: top;
+    height: 21px;
+    background-image: url(https://www.rankingdak.com/resources/pc/images/icon/ico_footer_service.png);
+    margin-right: 8px;
+    margin-top: -1px;
+}

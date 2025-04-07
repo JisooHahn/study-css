@@ -1,0 +1,56 @@
+<!-- Google Fonts에서 세리프(serif) 계열의 폰트를 선택해 <h1> 요소에 적용하세요.
+    제목의 크기는 2.5rem, 글자색은 파란색 계열(#003366)로 설정하세요.
+    본문 스타일링
+    
+    Google Fonts에서 산세리프(sans-serif) 계열의 폰트를 선택해 <p> 요소에 적용하세요.
+    본문 글씨 크기는 1rem, 줄 간격은 1.8, 글자색은 회색 계열(#555555)로 설정하세요.
+    기본 설정
+    
+    전체 페이지에 공통적으로 적용할 폰트를 설정하세요.
+    배경색은 연한 회색 계열(#f7f7f7), 상하좌우 여백은 각각 20px로 설정하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Font Styling Challenge</title>
+        <!-- 외부 스타일시트를 추가하세요 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="ptserif"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="roboto"
+        />
+        <style>
+            body {
+                font-family: "Times New Roman", Times, serif;
+                background-color: #f7f7f7;
+                margin: 20px;
+            }
+
+            h1 {
+                font-family: "ptserif";
+                font-size: 2.5rem;
+                color: #003366;
+            }
+
+            p {
+                font-family: "roboto";
+                font-size: 1rem;
+                line-height: 1.8;
+                color: #555555;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to the Font Styling Challenge</h1>
+        <p>
+            This is a paragraph where you can demonstrate your CSS skills by
+            applying the specified font-family, colors, and spacing.
+        </p>
+    </body>
+</html>

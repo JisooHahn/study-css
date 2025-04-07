@@ -1,0 +1,73 @@
+<!-- 갤러리 레이아웃
+
+화면에 3개의 이미지를 겹치게 배치합니다.
+각 이미지는 position: absolute를 사용하여 동일한 위치(가운데)에 겹쳐 놓습니다.
+z-index를 활용하여 이미지를 서로 다른 레이어에 배치합니다.
+클릭 시 이미지 이동
+
+이미지를 클릭하면 해당 이미지가 최상위 레이어로 올라오도록(z-index 변경) 구현하세요.
+스타일링
+
+이미지는 각각 크기가 가로 300px, 세로 200px입니다.
+적당한 이미지(또는 색상 배경)를 사용하고 테두리를 추가합니다. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Image Gallery with z-index</title>
+        <style>
+            body {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .gallery {
+                width: 600px;
+                height: 400px;
+                position: relative;
+            }
+
+            .image {
+                width: 300px;
+                height: 200px;
+                position: absolute;
+                border: 2px solid darkorchid;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+
+            .image:hover {
+                transform: scale(1.3);
+            }
+
+            .image-1 {
+                z-index: 1;
+                background-color: aquamarine;
+            }
+
+            .image-2 {
+                z-index: 2;
+                background-color: rgb(61, 139, 228);
+            }
+
+            .image-3 {
+                background-color: rgb(214, 127, 255);
+                z-index: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="gallery">
+            <div class="image image-1"></div>
+            <div class="image image-2"></div>
+            <div class="image image-3"></div>
+        </div>
+
+        <script src="i_d_task02.js"></script>
+    </body>
+</html>

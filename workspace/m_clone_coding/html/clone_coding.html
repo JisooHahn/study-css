@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>회원가입-컬리</title>
+        <link rel="icon" href="https://res.kurly.com/favicon.ico" />
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <section id="__next">
+            <header>
+                <section class="css-t79vuj">
+                    <div class="css-1xfyvd1">
+                        <a class="css-xygizb">회원가입</a>
+                        <div class="css-1qgm48u"></div>
+                        <a class="css-oyffzd">로그인</a>
+                        <div class="css-1qgm48u"></div>
+                        <div class="css-1qolcqm">
+                            <a class="css-oyffzd">
+                                고객센터
+                                <span class="css-1lrerrk"></span>
+                            </a>
+                            <div class="menu css-1ho29iy">
+                                <div class="css-12olpw6">공지사항</div>
+                                <div class="css-12olpw6">자주하는 질문</div>
+                                <div class="css-12olpw6">1:1 문의</div>
+                                <div class="css-12olpw6">대량주문 문의</div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="css-r7wmjj">
+                        <div class="css-boc80u">
+                            <img
+                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODIiIGhlaWdodD0iNDIiIHZpZXdCb3g9IjAgMCA4MiA0MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0ibm9uZSI+CiAgICAgICAgPHBhdGggZD0iTTAgMGg4MnY0MkgweiIvPgogICAgICAgIDxwYXRoIGQ9Ik02Mi41Ljk2NWMxLjAyNi0uNTU3IDIuNDY2LS43MTggMy4zNTYuMTA3Ljg5LjgyNS42NzYgMi4wNDggMCAzLjk3MyAwIDAtMS41MDUgNC4wNjYtMy4wNTUgOC4yNjJsLS4zOTggMS4wOGMtMS40MTQgMy44My0yLjc2MiA3LjQ4Ny0yLjkyNyA3Ljk2My0xLjQ5OCA0LjI0NSAxLjk2NyA0LjEyMiA0LjAyNC0uMTUyIDEuMTU5LTIuMzk0IDIuNjQ0LTYuMzU3IDIuNjQ0LTYuMzU3LjUyNC0xLjU2My42ODItMi41MDQuMzU5LTIuODI4LS4xMDctLjExMy4wNDUtLjI1Mi4xOC0uMzIzIDIuMjY5LTEuMTQ5IDQuNjMtLjA3MiAzLjMzNiAzLjMxbC0uMDU0LjEzOGMtLjM4Ny45NzgtMi42OCA2LjczMy0yLjY4IDYuNzMzLS42NzYgMS42Ni0uNTk1IDMuMjM2LjQxOCAzLjIzNi42ODYtLjAwNCAxLjQ2LS4zODUgMi4zMDQtMS4wODggMS44MTgtMS41MDQgMy4yMjItNC4zMTIgMy43MjctNS40NTQuMjMtLjUwOCAxLjA4Ny0yLjQyIDEuNzY2LTQuMzYxLjIzNi0uNjY1LjM2OS0xLjM2LjM5NS0yLjA2NWEuNDQzLjQ0MyAwIDAgMSAuMTk0LS40NTkgMy41NzggMy41NzggMCAwIDEgMS42Ny0uNDIgMS44MDUgMS44MDUgMCAwIDEgMS40NjUuNzA1Yy40NDMuNTk4LjU2NiAxLjU3OS4xMDMgMi44MDgtLjEyLjMyLTMuNzc1IDkuOTU4LTMuNzc1IDkuOTU4di4wMjZjMi4wNDEtMS4yMjMgMy44Ny0xLjMxMyA0Ljk1My0uODU0bC0uMDAzLS4wMTNjMS40OTUuNjQ3IDEuOTkgMi40NC45MzggMy41NTktLjEwMy4xMS0uMzYyLjA4NC0uMzYyLS4wOS0uMDk0LTEuMjUzLTIuNTE3LTMuNDk1LTYuMTA5LTEuMDc1bC0uMTQ1LjM4NS0xLjA2OCAyLjgwOGMtMi42MiA3LjAxOC01LjQwMyAxMi4xMzYtOS40MTUgMTEtMi42ODgtLjc2LTIuMzc3LTQuNjA3LjUxNS03Ljc5YTU0LjkgNTQuOSAwIDAgMSA2LjQ5LTUuODk4Yy4wNjgtLjE4OC4xMy0uMzUuMTg4LS41MTEuMjc4LS43OC40OTEtMS40MzQuNzkyLTIuMjY1bC4xNTktLjUxOGMtLjE3OC4yLS40OTguNTczLS43MTIuODEyLS43MTIuOC0yLjQ5NCAyLjc1Ny01LjMyOSAyLjIwN2wtLjIzNC0uMDUyYy0yLjA1LS41MDgtMi42MDgtMS45ODYtMi42NTUtMy4yNzctMi4xNDIgMi42NTYtNC4zNTEgMy40MjYtNS44MDcgMy4zOS0xLjk0OC0uMDQ4LTMuMzc4LTEuNTE0LTIuNDI3LTQuMjkgMS4wNTgtMy4xMDYgNS41LTE1LjMzMiA2Ljc5NS0xOSAuNDg1LTEuNTguNjY2LTIuNTguMTg0LTIuOTc0LS4xMjMtLjEwMy4wNTItLjI2NS4yLS4zNDZ6bTguMzY0IDI4Ljc3OGMtMS4xMDMuODgtNS41MjYgNC41My02Ljc1MiA3LjQ0MS0uNTA1IDEuMTk3LS4zNzYgMi4xNDkuNDg4IDIuMjMzIDEuOTYuMTk0IDQuMDEyLTMuODE4IDYuMjI4LTkuNTEyek0xNi4wMjggNS4zNTJjLS4wODcuMzMyLTEuMzE5IDMuODYtMi43MDEgNy43NDlsLS4yMDkuNTg2LS4yMS41ODktLjIxNS42MDRjNC42OTEtMS4xMjMgMTMuMDY0LTYuNTcgMTQuMDM1LTEwLjA4NS4xMi0uMTYxLjI5LS4yMi41NjYtLjAzNS40OTUuMzMuNjg2IDEuMTU1LjQ5NSAxLjkxOC0uNzY0IDMuMDM4LTYuNDE2IDcuMzQxLTExLjM3OSA5LjU1NC42MTIgMS42MzcgMi42ODIgNi4yNjcgNC4yMDYgOS4xMTEgMS42NjMgMy4xMTkgMy40MiA0LjU3NSA2LjE0NyA0LjczNyAxLjQ2LjA4NSAzLjAxNC0uNDQ3IDMuODkzLTEuMjJsLjE0OC0uMTQtLjAxMy4wM2MuMTk0LS4yMDQuNTExLjA3Ny4zNjYuMzIzYTYuNSA2LjUgMCAwIDEtNC45OTIgMi44NjdjLTYuMzQ1LjQyNy04Ljc3NC0zLjg3LTEzLjMwNC0xNC40OTQtLjM2Ni4xMjYtLjgwOS4yODgtMS4yNTUuNDUtLjA3NS4xODctMi4wNyA1LjY0Mi0yLjEzIDUuODIzLS45NDQgMi44Ny0xLjAwNSA0LjQ0Mi0uMzU4IDQuODk1LjE0NS4wOS4wNzQuMzMzLS4xNzguNDE0LTIuNTI3Ljc5Ni00Ljg1My0uNjk2LTMuNTU5LTQuNDQyIDEuMTYxLTMuMzE2IDUuNjktMTYuMTggNi45MTQtMTkuNjI2LjQyNy0xLjI5NC4xOTctMi4xMjUtLjQ5Mi0yLjMwNkM4LjUwNiAxLjc4Ljg3NyA4Ljc0OSAxLjk3MSAxNS4xODRjLjE5IDEuMTIuOTggMS43NDcgMS4zNzggMS42NjNhLjEzMy4xMzMgMCAwIDEgLjE1Ni4xNTkgMS41MDggMS41MDggMCAwIDEtMS44NDUgMS4wMzJDLjQ5IDE3Ljc4Mi4xMDcgMTYuNTI3LjA0MyAxNS44OC0uNjAxIDkuMjIgNi4xNDggMS4yMyAxMi4zODkuNThjMi4zNzgtLjI1IDQuNjEuOTYgMy42NCA0Ljc3MnptMjQuMDQgOS45MTMtLjA2LjIwNy0yLjgzIDguMTZjLS4zMDQuODUtLjEgMS43MzcuNTAxIDEuOTAyIDEuNzU3LjQ4MiA0LjAyOC0yLjE0NSA1LjEzMS00LjczM2E2Ny43OTQgNjcuNzk0IDAgMCAwIDEuNDc2LTMuODE1Yy41ODItMS42NDMgMS4xMDYtMy4xODMuNzgzLTMuOTA4LS4wNzUtLjE2OC4wNDUtLjI1Ni4yMjMtLjM1LjUwNS0uMjU1IDIuMjI2LS44MjUgMy4xNDEuMDY4LjY5NS42NzQuNjA5IDEuNzcxLS4wMyAzLjQzN2wtLjA5Ni4yNDIuMjItLjI3M2MyLjcwMy0zLjMgNC43OTItNC4yOTIgNi41NjMtMy41OTdsLjE0Ny4wNjJjMi4zODEgMS4wNzQgMS4xNDYgNS4yMTUtMi4xMTYgNS40OC0uMi4wMTctLjM1Ni0uMTI2LS4xNTgtLjQwNy4zOTUtLjYwNS4zNTYtMS45MDktLjc5Ni0yLjAyMi0xLjE1Mi0uMTEzLTIuODMgMS4yMDctNC4wMzggMi44NDQtMS4wODQgMS40NS0yLjIgMy45MTEtMy4zMjIgNy4yNzMtLjI3Mi44MTgtLjE0MyAxLjAxMi0uMTEgMS4wNjdhLjEuMSAwIDAgMSAwIC4wOTRjLS4xNDMuMjcyLS45NjUuNTk2LTEuNzYuNTk2LTEuNjI1LS4wMDctMi4yOTEtLjk0NS0xLjk2Ny0yLjQzNy0xLjg0OCAxLjc2NC0zLjcxMSAyLjYxNC01LjM1NSAyLjQ2NmEyLjUyNCAyLjUyNCAwIDAgMS0yLjIzNi0zLjEwM2MtMS40MjYgMS44MDktMy41NDIgMy4yNjgtNS42OTcgMy4wNjctMi4xNTUtLjItMy41LTEuNjY2LTIuODAyLTQuNzg4LjU5LTIuNTk4IDEuNTkyLTUuMjkgMi4yMDctNy4wMjcuNTE0LTEuNDU2LjYxOC0yLjQwNy4yOTQtMi43NS0uMTAzLS4xMTQuMDU1LS4yNS4xOTQtLjMyNCAxLjY5LS44ODYgNC4zOTQtLjMxNCAzLjYzIDIuMDktLjgwMiAyLjUyNy0yLjI1NSA2LjQ5LTIuNTUgNy40LS43MzcgMi4yODctLjI5IDMuNTIzLjc1NSAzLjU4IDEuMDQ1LjA2IDIuNDMtLjk2IDMuNDItMi41MDMgMS43Ni0yLjUyNCAyLjU4MS01LjY4NSAzLjM3Ny03Ljg4Mi4yMDQtLjU2LjUyNy0xLjg2Ni4xODUtMi4zNTItLjA5MS0uMTIzLjA2Ny0uMjU4LjI3NS0uMzcyIDEuNTM3LS44NDkgNC4yODUtLjY0IDMuNDAyIDIuNjA4eiIgZmlsbD0iIzVGMDA4MCIvPgogICAgPC9nPgo8L3N2Zz4K"
+                                alt="마켓컬리 로고"
+                                class="css-17mnrrx"
+                            />
+                            <button class="active css-mxd3pm">마켓컬리</button>
+                            <button class="css-mxd3pm">뷰티컬리</button>
+                        </div>
+                        <div class="css-pqw0uk">
+                            <div class="css-w444a2">
+                                <input
+                                    id="gnb_search"
+                                    placeholder="검색어를 입력해주세요"
+                                    class="css-11ntk83"
+                                />
+                                <button
+                                    id="submit"
+                                    aria-label="submit classcss-ywxmlw"
+                                ></button>
+                            </div>
+                        </div>
+                        <div class="css-pqw0uk">
+                            <div class="css-c4pbxv">
+                                <div class="css-14vnom0"></div>
+                                <button
+                                    class="css-231fw3"
+                                    aria-label="찜하기"
+                                    type="button"
+                                ></button>
+                                <div class="css-ff2aah">
+                                    <button class="css-g25h97"></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="header" class="css-17tqugj">
+                    <section class="css-mlddcv">
+                        <div class="css-0">
+                            <div class="css-axtlq9">
+                                <span class="css-1k5gn9s"></span>
+                                <span class="css-t75x7c">카테고리</span>
+                            </div>
+                        </div>
+                        <ul class="css-1887xqd">
+                            <li class="css-59mmhh">
+                                <span class="css-1xyu7j9">신상품</span>
+                            </li>
+                            <li class="css-59mmhh">
+                                <span class="css-1xyu7j9">베스트</span>
+                            </li>
+                            <li class="css-59mmhh">
+                                <span class="css-1xyu7j9">알뜰쇼핑</span>
+                            </li>
+                            <li class="css-59mmhh">
+                                <span class="css-1xyu7j9">특가/혜택</span>
+                            </li>
+                        </ul>
+                        <div class="css-s5xdrg">
+                            <div class="css-53dwoq">
+                                <span class="css-1s2o3jp">샛별·하루</span>
+                                배송안내
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <div hidden class="css-1px7x3s"></div>
+            </header>
+            <section class="css-pculus">
+                <div class="css-o5dw7d">회원가입</div>
+                <div class="css-mhmtvt">
+                    <div class="css-rb0i47">
+                        <span class="css-qq9ke6">*</span>
+                         필수입력사항
+                    </div>
+                    <div class="css-y8aj3r">
+                        <div class="css-1pjgd36">
+                            <div class="css-1y8737n">
+                                <label class="css-1obgjqh">아이디
+                                    <span class="css-qq9ke6">*</span>
+                                </label>
+                            </div>
+                            <div class="css-82a6rk">
+                                <div class="css-jmalg">
+                                    <div class="css-176lya2">
+                                        <input type="text" id="memberid" class="css-u52dqk" name="memberid" placeholder="아이디를 입력해주세요">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="css-1w0ksfz"></div>
+                        </div>
+                        <div class="css-1pjgd36">
+                            <div class="css-1y8737n">
+                                <label class="css-1obgjqh">비밀번호
+                                    <span class="css-qq9ke6">*</span>
+                                </label>
+                            </div>
+                            <div class="css-82a6rk">
+                                <div class="css-jmalg">
+                                    <div class="css-176lya2">
+                                        <input type="password" id="passowrd" class="css-u52dqk" aria-autocomplete="list" placeholder="비밀번호를 입력해주세요">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="css-1w0ksfz"></div>
+                        </div>
+                        <div class="css-1pjgd36">
+                           <div class="css-1y8737n">
+                            <label class="css-1obgjqh">
+                                비밀번호확인
+                                <span class="css-qq9ke6">*</span>
+                            </label>
+                           </div>
+                           <div class="css-82a6rk">
+                            <div class="css-jmalg">
+                               <div class="css-176lya2">
+                                <input type="password" id="passwordConfirm" placeholder="비밀번호를 한번 더 입력해주세요" autocomplete="off" class="css-u52dqk">
+                               </div> 
+                            </div>
+                            <div class="css-1w0ksfz"></div>
+                           </div>
+                           <div class="css-1w0ksfz"></div> 
+                        </div>
+                        <div class="css-1pjgd36">
+                            <div class="css-1y8737n">
+                                <label class="css-1obgjqh">
+                                    이름
+                                    <span class="css-qq9ke6">*</span>
+                                </label>
+                            </div>
+                            <div class="css-82a6rk">
+                                <div class="css-jmalg">
+                                        <div class="css-176lya2">
+                                            <input type="text" id="name" class="css-u52dqk" placeholder="이름을 입력해주세요">
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="css-1w0ksfz"></div>
+                        </div>
+                        <div class="css-1pjgd36">
+                            <div class="css-1y8737n">
+                                <label class="css-1obgjqh">
+                                    이메일
+                                    <span class="css-qq9ke6">*</span>
+                                </label>
+                            </div>
+                            <div class="css-82a6rk">
+                                <div class="css-jmalg">
+                                    <div class="css-rmx7n5">
+                                        <input type="text" id="emailid" class="css-1is3e26" placeholder="예: marketkurly">
+                                        <div class="css-dzd8y1">@</div>
+                                            <div class="ps css-1njvjis">
+                                                <button type="button" class="btn-text empty">선택하기</button>
+                                                <button type="button" class="btn-select">
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9ImljX2Fycm93X2Rvd25fNDgiPgo8cGF0aCBpZD0iU2hhcGUiIGQ9Ik0yNC4wNzc2IDI2LjczMDFMMjcuODI3NiAyMi4yMzAxQzI4LjIzNDcgMjEuNzQxNiAyNy44ODczIDIxIDI3LjI1MTQgMjFIMTkuNzUxNEMxOS4xMTU2IDIxIDE4Ljc2ODIgMjEuNzQxNiAxOS4xNzUzIDIyLjIzMDFMMjIuOTI1MyAyNi43MzAxQzIzLjIyNTEgMjcuMDkgMjMuNzc3OCAyNy4wOSAyNC4wNzc2IDI2LjczMDFaIiBmaWxsPSIjMzMzMzMzIi8+CjwvZz4KPC9zdmc+Cg==" alt="arrow-down">
+                                                </button> 
+                                            </div>
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="css-1w0ksfz"></div>
+                        </div>
+                        <div class="css-1pjgd36">
+                            <div class="css-1y8737n">
+                                <label class="css-1obgjqh">휴대폰
+                                    <span class="css-qq9ke6">*</span>
+                                </label>
+                            </div>
+                            <div class="css-82a6rk">
+                                <div class="css-jmalg">
+                                    <div class="css-176lya2">
+                                        <input type="tel" id="mobileNumber" class="css-u52dqk" placeholder="숫자만 입력해주세요.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="css-1w0ksfz">
+                                <button class="css-ufulao" type="button" disabled>
+                                    <span class="css-nytqmg">인증번호 받기</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="css-1pjgd36">
+                            <div class="css-1y8737n">
+                               <label class="css-1obgjqh">
+                                주소
+                                <span class="css-qq9ke6">*</span>
+                               </label> 
+                            </div>
+                            <div class="css-82a6rk">
+                                <button class="css-1schgvv" type="button" height="44" radius="4">
+                                    <span class="css-nytqmg">
+                                        <img src="https://res.kurly.com/pc/service/cart/2007/ico_search.svg" class="css-1m3kac1">
+                                        주소 검색
+                                    </span>
+                                </button>
+                                <span class="css-vukl2m">배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+                            </div>
+                            <div class="css-1w0ksfz"></div>
+                        </div>
+                        <div class="css-1pjgd36">
+                            <div class="css-1y8737n">
+                                <laber class="css-1obgjqh">성별</laber>
+                            </div>
+                            <div class="css-82a6rk">
+                                <div class="css-14wodj6">
+                                    <label class="css-z9g6s0" for="gender-man">
+                                        <input type="radio" id="gender-man" name="gender" class="css-1pes2r6" value="MALE">
+                                        <span class="css-5xw1m2">
+                                            <div class="css-1vic0rk">
+                                            </div>
+                                        </span>
+                                        <span aria-labelledby="gender-man" class="css-mgd87h">남자</span>
+                                    </label>
+                                    <label class="css-z9g6s0" for="gender-woman">
+                                        <input type="radio" id="gender-woman" name="gender" value="female" class="css-1pes2r6">
+                                        <span class="css-5xw1m2">
+                                            <div class="css-198i9ca"></div>
+                                        </span>
+                                        <span class="css-1dahn5m" aria-labelledby="gender-woman">여자</span>
+                                    </label>
+                                    <label class="css-z9g6s0" for="gender-none">
+                                        <input type="text">
+                                        <span class="css-198i9ca">
+                                            <div class="css-1dahn5m"></div>
+                                        </span>
+                                        <span span aria-labelledby="gender-none" class="css-mgd87h">선택안함</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="css-1w0ksfz"></div>
+                        </div>
+                        <div class="css-1pjgd36">
+                            <div class="css-1y8737n">
+                                <label class="css-1obgjqh">생년월일</label>
+                            </div>
+                            <div class="css-82a6rk"></div>
+                                <div class="css-18n8lnw">
+                                    <div class="css-1dkwuq4">
+                                        <div height="40" class="css-xsmgyi">
+                                            <input type="text" class="css-151eme7" name="birthYear" placeholder="YYYY" height="40">
+                                        </div>
+                                    </div>
+                                    <span class="css-5lnvt6"></span>
+                                    <div class="css-1dkwuq4">
+                                        <div height="40" class="css-xsmgyi">
+                                           <input type="text" name="birthMonth" placeholder="MM" height="40" class="css-151eme7"> 
+                                        </div>
+                                    </div>
+                                    <span class="css-5lnvt6"></span>
+                                    <div class="css-1dkwuq4">
+                                        <div height="40" class="css-xsmgyi">
+                                            <input type="text" name="birthDay" placeholder="DD" height="40" class="css-151eme7">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="css-1w0ksfz"></div>
+                        </div>
+                        <div class="css-1pjgd36">
+                            <div class="css-1y8737n">
+                                <label class="css-1obgjqh">추가입력 사항</label>
+                            </div>
+                            <div class="css-82a6rk">
+                               <div class="css-14wodj6">
+                                <label for="additional-recommender" class="css-z9g6s0">
+                                    <input type="radio" id="additional-recommender" name="joinExtraInputType" class="css-1pes2r6" value="RECOMMEND">
+                                    <span class="css-198i9ca">
+                                        <div class="css-1dahn5m"></div>
+                                    </span>
+                                    <span class="css-mgd87h" aria-labelledby="additional-recommender">친구초대 추천인 아이디</span>
+                                </label>
+                               </div> 
+                            </div>
+                            <div class="css-1w0ksfz"></div>
+                        </div>
+                    </div>
+                    <div class="css-1eo0fey"></div>
+                    <div class="css-y8aj3r">
+                        <div class="css-2yzr8b">
+                            <div class="css-1y8737n">
+                                <label class="css-1obgjqh">
+                                    이용약관동의
+                                    <span class="css-qq9ke6">*</span>
+                                </label>
+                            </div>
+                            <div class="css-82a6rk">
+                                <div class="css-ov2xfu">
+                                    <label for="TermsAgreeAll" class="css-msja7w">
+                                        <input type="checkbox" id="TermsAgreeAll" class="css-agvwxo">
+                                        <div class="css-79hxr7">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd" fill="#fff"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                        </div>
+                                    <span>전체 동의합니다.</span>
+                                    </label>
+                                    <p class="css-nygcgj">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
+                                </div>
+                                <div class="css-ov2xfu">
+                                    <div class="css-s5xdrg">
+                                        <label class="css-1mjkje9" for="RequiredTermsCondition">
+                                           <input type="checkbox" id="RequiredTermsCondition" class="css-agvwxo"> 
+                                           <div class="css-79hxr7">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd" fill="#fff"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                           </div>
+                                           <span>이용약관 동의</span>
+                                        </label>
+                                        <span class="css-64z8en">
+                                            (필수)
+                                        </span>
+                                    </div>
+                                    <a class="css-7chi73">
+                                        약관보기
+                                    </a>
+                                </div>
+                                <div class="css-ov2xfu">
+                                    <div class="css-s5xdrg">
+                                        <label class="css-1mjkje9" for="RequiredTermsOfPrivacy">
+                                            <input type="checkbox" id="RequiredTermsOfPrivacy" class="css-agvwxo">
+                                            <div class="css-79hxr7">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd" fill="#fff"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                            </div>
+                                            <span>개인정보 수집∙이용 동의</span>
+                                        </label>
+                                        <span class="css-64z8en">
+                                            (필수)
+                                        </span>
+                                    </div>
+                                    <a class="css-7chi73">
+                                        약관보기
+                                    </a>
+                                </div>
+                                <div class="css-ov2xfu">
+                                    <div class="css-s5xdrg">
+                                        <label for="OptionalTermsOfPrivacy" class="css-1mjkje9">
+                                           <input type="checkbox" id="OptionalTermsOfPrivacy" class="css-agvwxo">
+                                           <div class="css-79hxr7">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd" fill="#fff"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                           </div>
+                                           <span>개인정보 집∙이용 동의</span> 
+                                        </label>
+                                        <span class="css-64z8en">
+                                            선택
+                                        </span>
+                                    </div>
+                                    <a class="css-7chi73">
+                                        약관보기
+                                    </a>
+                                </div>
+                                <div class="css-ob6kg2">
+                                    <div class="css-s5xdrg">
+                                        <label class="css-1mjkje9" for="SignupEventAll">
+                                            <input type="checkbox" id="SignupEventAll" class="css-agvwxo">
+                                            <div class="css-79hxr7">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd" fill="#fff"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                            </div>
+                                            <span>무료배송, 할인쿠폰 등 혜택/정보 수신 동의</span>
+                                        </label>
+                                        <span class="64z8en">
+                                            선택
+                                        </span>
+                                    </div>
+                                    <div class="css-1qsjbts">
+                                       <label for="OptionalTermsOfSms" class="css-1vvmqtp">
+                                        <input type="checkbox" id="OptionalTermsOfSms" class="css-agvwxo">
+                                        <div class="css-79hxr7">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd" fill="#fff"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                        </div>
+                                        <span>SMS</span>
+                                       </label>
+                                       <label for="OptionalTermsOfMailing" class="css-1vvmqtp">
+                                        <input type="checkbox" id="OptionalTermsOfMailing" class="css-agvwxo">
+                                        <div class="css-79hxr7">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd" fill="#fff"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                        </div>
+                                        <span>이메일</span>
+                                       </label> 
+                                    </div>
+                                </div>
+                                <div class="css-ov2xfu">
+                                    <div class="css-s5xdrg">
+                                        <label for="RequiredSignupAge" class="css-1mjkje9">
+                                            <input type="checkbox" id="RequiredSignupAge" class="css-agvwxo">
+                                            <div class="css-79hxr7">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd" fill="#fff"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                            </div>
+                                            <span>본인은 만 14세 이상입니다.</span>
+                                        </label>
+                                        <span class="css-64z8en">
+                                            필수
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="css-ud3rkg">
+                        <button class="css-18m884r" type="submit" width="240" height="56" radius="3">
+                            <span class="css-nytqmg">가입하기</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>z-index</title>
+        <style>
+            #container {
+                position: relative;
+                width: 500px;
+                height: 500px;
+                margin: 0 auto;
+                border: 2px dashed blue;
+            }
+
+            div.div {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+            }
+
+            #container div:first-child {
+                background-color: aqua;
+                z-index: 2;
+            }
+
+            #container div:last-child {
+                background-color: brown;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="div"></div>
+            <div class="div"></div>
+        </div>
+    </body>
+</html>

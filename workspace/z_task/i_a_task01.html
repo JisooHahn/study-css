@@ -1,0 +1,95 @@
+<!-- 배치 규칙
+
+화면 중앙에는 큰 이미지를 배치합니다.
+큰 이미지의 네 모서리에 작은 이미지를 하나씩 배치합니다.
+absolute를 사용하여 네 모서리 위치를 정확히 지정합니다.
+기능 제한
+
+position: relative 또는 z-index는 사용할 수 없습니다.
+상위 요소의 margin, padding 속성만 사용 가능하며, 부모 요소의 기본 배치 역할을 활용하세요.
+스타일링
+
+모든 이미지의 배경색은 다양하게 설정하여 눈에 띄게 구분합니다.
+큰 이미지는 가로/세로 300px 정사각형, 네 개의 작은 이미지는 각각 100px 정사각형으로 만드세요. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Absolute Position Challenge</title>
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f0f0f0;
+            }
+
+            .container {
+                width: 400px;
+                height: 400px;
+                background-color: #e0e0e0; /* 부모 요소를 시각적으로 확인하기 쉽게 설정 */
+                position: static; /* relative가 아닌 기본 static 상태 유지 */
+            }
+
+            .image {
+                position: absolute;
+            }
+
+            /* 큰 이미지 (중앙 배치) */
+            .large {
+                width: 300px;
+                height: 300px;
+                background-color: #ffcccb; /* 연한 빨강 */
+                top: 50%; /* 부모 요소 기준으로 위쪽 50% */
+                left: 50%; /* 부모 요소 기준으로 왼쪽 50% */
+                transform: translate(
+                    -50%,
+                    -50%
+                ); /* 정확한 중앙 배치를 위해 transform 사용 */
+            }
+
+            /* 모서리 이미지 (네 모서리 배치) */
+            .corner {
+                width: 100px;
+                height: 100px;
+                background-color: #add8e6; /* 연한 파랑 */
+            }
+
+            .top-left {
+                top: 0;
+                left: 0;
+                background-color: #90ee90; /* 연한 녹색 */
+            }
+
+            .top-right {
+                top: 0;
+                right: 0;
+                background-color: #ffa07a; /* 연한 주황 */
+            }
+
+            .bottom-left {
+                bottom: 0;
+                left: 0;
+                background-color: #87ceeb; /* 스카이블루 */
+            }
+
+            .bottom-right {
+                bottom: 0;
+                right: 0;
+                background-color: #f08080; /* 라이트 코랄 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="image large"></div>
+            <div class="image corner top-left"></div>
+            <div class="image corner top-right"></div>
+            <div class="image corner bottom-left"></div>
+            <div class="image corner bottom-right"></div>
+        </div>
+    </body>
+</html>

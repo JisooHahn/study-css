@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Font Size Practice</title>
+        <style>
+            .px-12 {
+                font-size: 12px;
+            }
+
+            .px-16 {
+                font-size: 16px;
+            }
+
+            .px-24 {
+                font-size: 24px;
+            }
+
+            .parent-em {
+                font-size: 16px;
+            }
+
+            .child-em {
+                font-size: 1.5em; /* 24px */
+            }
+
+            .nested-em {
+                font-size: 2em; /* 32px */
+            }
+
+            .nested-em p {
+                font-size: 1.2em; /* 38.4px */
+            }
+
+            /* rem 단위 */
+            .rem-14 {
+                font-size: 1.4rem; /* 루트 글꼴 크기의 1.4배 */
+            }
+            .rem-20 {
+                font-size: 2rem; /* 루트 글꼴 크기의 2배 */
+            }
+            .rem-30 {
+                font-size: 3rem; /* 루트 글꼴 크기의 3배 */
+            }
+
+            /* % 단위 */
+            .percent-parent {
+                font-size: 16px; /* 부모 폰트 크기 설정 */
+            }
+            .percent-150 {
+                font-size: 150%; /* 부모 폰트 크기의 150% */
+            }
+            .percent-200 {
+                font-size: 200%; /* 부모 폰트 크기의 200% */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Font Size Practice</h1>
+
+        <!-- px 단위 연습 -->
+        <section class="px-example">
+            <h2>Absolute Units (px)</h2>
+            <p class="px-12">Font size: 12px</p>
+            <p class="px-16">Font size: 16px</p>
+            <p class="px-24">Font size: 24px</p>
+        </section>
+
+        <!-- em 단위 연습 -->
+        <section class="em-example">
+            <h2>Relative Units (em)</h2>
+            <div class="parent-em">
+                Parent font size: 16px
+                <p class="child-em">Font size: 1.5em (relative to parent)</p>
+                <div class="nested-em">
+                    Nested font size: 2em
+                    <p>
+                        Font size inside nested: 1.2em (relative to nested
+                        parent)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- rem 단위 연습 -->
+        <section class="rem-example">
+            <h2>Relative Units (rem)</h2>
+            <p class="rem-14">Font size: 1.4rem (relative to root)</p>
+            <p class="rem-20">Font size: 2rem (relative to root)</p>
+            <p class="rem-30">Font size: 3rem (relative to root)</p>
+        </section>
+
+        <!-- % 단위 연습 -->
+        <section class="percent-example">
+            <h2>Percentage (%)</h2>
+            <div class="percent-parent">
+                Parent font size: 16px
+                <p class="percent-150">Font size: 150% (relative to parent)</p>
+                <p class="percent-200">Font size: 200% (relative to parent)</p>
+            </div>
+        </section>
+    </body>
+</html>
