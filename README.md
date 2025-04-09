@@ -111,8 +111,9 @@ p {
 
 #### 블록 요소
 
-본인
+본인<br>
 margin: 0 auto;<br>
+
 자식
 
 1. 블록(부모에 flex) - 가로 배치가 default<br>
@@ -125,7 +126,7 @@ margin: 0 auto;<br>
 
 #### 인라인 요소
 
-본인
+본인<br>
 수평: 부모에 text-align
 수직: line-height
 
